@@ -5,7 +5,7 @@
 using namespace std; 
 
 void setWallpaper() {
-	LPCWSTR pathwayToImage = L"C:\\Users\\tobyb\\source\\repos\\DailyDesktopChanger\\test.JPG";
+	LPCWSTR pathwayToImage = L"C:\\Users\\user\\source\\repos\\DailyDesktopChanger\\test.JPG";
 	
 	int result = SystemParametersInfo(
 		SPI_SETDESKWALLPAPER,
