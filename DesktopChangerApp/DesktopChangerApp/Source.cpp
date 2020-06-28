@@ -4,10 +4,31 @@
 
 using namespace std; 
 
+void setWallpaper() {
+	LPCWSTR pathwayToImage = L"C:\\Users\\tobyb\\source\\repos\\DailyDesktopChanger\\test.JPG";
+	
+	int result = SystemParametersInfo(
+		SPI_SETDESKWALLPAPER,
+		0,
+		(LPCWSTR *)pathwayToImage,
+		SPIF_UPDATEINIFILE);
+
+	cout << result << endl;
+
+	if (result)
+	{
+		std::cout << "Wallpaper set";
+	}
+	else
+	{
+		std::cout << "Wallpaper not set";
+
+	}
+
+}
+
 
 int main() {
-	LPCWSTR test = L"C:\\Users\\user\\Pictures\\minion.png";
-	int result = SystemParametersInfo(SPI_SETDESKWALLPAPER, 0, (LPCWSTR *)test, SPIF_UPDATEINIFILE);
-
-
+	setWallpaper();
+	return 0;
 }
