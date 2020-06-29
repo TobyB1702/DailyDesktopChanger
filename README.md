@@ -1,2 +1,2 @@
 # DailyDesktopChanger
-Changes your desktop wallpaper every 24 hours 
+Changes your desktop wallpaper on startup
