@@ -6,8 +6,21 @@
 
 using namespace std; 
 
+int randomWallpaperSelector() {
+
+	int wallpaperNumber = rand() % 5 + 1;
+	return wallpaperNumber;
+
+}
+
 void setWallpaper() {
-	string pathwayToImage = "C:\\Users\\tobyb\\source\\repos\\DailyDesktopChanger\\wallpapers\\1.jpg";
+
+	int wallpaperNumber = randomWallpaperSelector();
+	string pathwayToImage = "C:\\Users\\tobyb\\source\\repos\\DailyDesktopChanger\\wallpapers\\";
+
+	pathwayToImage += to_string(wallpaperNumber) += ".jpg";
+
+	cout << pathwayToImage << endl;
 	
 	int result = SystemParametersInfo(
 		SPI_SETDESKWALLPAPER,
