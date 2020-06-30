@@ -30,21 +30,9 @@ void setWallpaper() {
 
 }
 
-void computationTime() {
-	auto start = std::chrono::system_clock::now();
-	// Some computation here
-	auto end = std::chrono::system_clock::now();
-
-	time_t end_time = chrono::system_clock::to_time_t(end);
-
-	cout << end_time << endl;
-
-}
-
 
 int main() {
 	setWallpaper();
-	computationTime();
 
 	return 0;
 }
