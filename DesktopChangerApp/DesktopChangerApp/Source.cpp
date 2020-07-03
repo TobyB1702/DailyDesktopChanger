@@ -8,7 +8,7 @@ using namespace std;
 
 int randomWallpaperSelector() {
 	srand((unsigned int)time(NULL));
-	return rand() % 30 + 1;
+	return rand() % 40 + 1;
 
 }
 
